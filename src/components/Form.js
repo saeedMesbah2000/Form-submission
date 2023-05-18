@@ -1,7 +1,6 @@
-import useInput from "../hooks/useInput";
+import useInput from "../hooks/useInput-r";
 
 const nameValidation = (value) => {
-  console.log(value.trim() !== "");
   return value.trim() !== "";
 };
 const emailValidation = (value) => {
@@ -41,7 +40,7 @@ const BasicForm = (props) => {
     // and also if th request sent the page will reload and restart the react application and we will lose our state :)
     event.preventDefault();
 
-    console.log("working submit");
+    console.log("working");
     firstNameOnResetHandler();
     lastNameOnResetHandler();
     emailOnResetHandler();

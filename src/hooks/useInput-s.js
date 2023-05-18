@@ -1,6 +1,11 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const useInput = (valueValidation) => {
+  // i just want to print it for once :/
+  useEffect(() => {
+    console.log("using useState");
+  }, []);
+
   const [inputValue, setInputValue] = useState("");
   const [inputIsTouched, setInputIsTouched] = useState(false);
 
